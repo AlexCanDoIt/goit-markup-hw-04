@@ -38,6 +38,11 @@ body {
   height: auto;
 }
 
+.svg {
+  width: 16px;
+  height: 12px;
+}
+
 .title {
   margin-bottom: 50px;
 }
