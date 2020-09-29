@@ -132,7 +132,7 @@ body {
 }
 
 .header-address-list-item > .link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
@@ -152,7 +152,10 @@ body {
 }
 
 .navigation-list-link:hover,
-.navigation-list-link:focus,
+.navigation-list-link:focus {
+  color: var(--accent-color);
+}
+
 .header-address-list-mail:hover,
 .header-address-list-mail:focus,
 .header-address-list-tel:hover,
@@ -223,6 +226,17 @@ body {
   margin-right: 30px;
 } */
 
+.benefits-list-icon {
+  width: 270px;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+}
+
 .benefits-list-title {
   margin-bottom: 10px;
 
@@ -276,10 +290,11 @@ body {
 }
 
 .team-title {
+  text-align: center;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-white-theme-color);
 }
@@ -291,7 +306,6 @@ body {
 }
 
 .team-list-item {
-  padding-bottom: 30px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -300,7 +314,13 @@ body {
 .team-list-img {
   width: 270px;
   /* height: 260px; */
-  margin-bottom: 30px;
+}
+
+.team-list-content {
+  padding-top: 30px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  padding-left: 32px;
 }
 
 .team-list-name {
@@ -314,13 +334,72 @@ body {
 }
 
 .team-list-position {
+  margin-bottom: 16px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.186;
   letter-spacing: 0.03em;
   color: var(--text-white-theme-color);
 }
+
+.team-list-link {
+  display: block;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+}
+
+.team-list-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list-link:hover,
+.team-list-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  --color3: var(--title-dark-theme-color);
+}
 /* ========== End Our Team Section ========== */
+
+/* ========== Regular Customers Section ========== */
+.customers-title {
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: var(--title-white-theme-color);
+}
+
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers-list-item {
+  text-align: center;
+}
+
+.customers-list-link {
+  display: block;
+  width: 170px;
+  height: 90px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+  --color3: var(--accent-color);
+  border-color: var(--accent-color);
+}
+/* ========== End Regular Customers Section ========== */
 
 /* ========== Portfolio Section ========== */
 .portfolio-filter-list {
