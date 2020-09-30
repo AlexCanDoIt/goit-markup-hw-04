@@ -168,14 +168,21 @@ body {
 /* ========== Hero========== */
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: #2F303A;
 }
 
-.hero > .conteiner {
-  padding-left: 252px;
+.hero-image {
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url("../images/main/index/hero-1.jpg");
+  background-repeat: no-repeat;
+}
+
+.hero .conteiner {
   padding-right: 252px;
+  padding-left: 252px;
 }
 
 .hero-title {
@@ -455,8 +462,8 @@ body {
   margin-bottom: 30px;
 }
 
-.portfolio-list-item:hover,
-.portfolio-list-item:focus {
+.portfolio-list-link:hover,
+.portfolio-list-link:focus {
   box-shadow: 0px 1px 1px rgba(5, 4, 4, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -478,11 +485,6 @@ body {
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
 }
-
-/* .portfolio-list-content:hover,
-.portfolio-list-content:focus {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-} */
 
 .portfolio-list-title {
   margin-bottom: 4px;
