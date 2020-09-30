@@ -225,19 +225,33 @@ body {
   width: calc((100% - 3 * 30px) / 4);
 }
 
-/* .benefits-list-item:not(:last-child) {
-  margin-right: 30px;
-} */
-
-.benefits-list-icon {
+.benefits-list-item::before {
+  content: "";
+  display: block;
   width: 270px;
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: #F5F4FA;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70px 70px;
+}
+
+.benefits-list-item:nth-child(1)::before {
+  background-image: url(../images/main/index/icon-satellite-dish.svg);
+}
+
+.benefits-list-item:nth-child(2)::before {
+  background-image: url(../images/main/index/icon-clock.svg);
+}
+
+.benefits-list-item:nth-child(3)::before {
+  background-image: url(../images/main/index/icon-laptop.svg);
+}
+
+.benefits-list-item:nth-child(4)::before {
+  background-image: url(../images/main/index/icon-astronaut.svg);
 }
 
 .benefits-list-title {
@@ -347,11 +361,12 @@ body {
 }
 
 .team-list-link {
-  display: block;
-  padding-top: 12px;
-  padding-right: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
 .team-list-icon {
@@ -362,7 +377,6 @@ body {
 .team-list-link:hover,
 .team-list-link:focus {
   background-color: var(--accent-color);
-  border-radius: 50%;
   --color3: var(--title-dark-theme-color);
 }
 /* ========== End Our Team Section ========== */
@@ -388,11 +402,11 @@ body {
 }
 
 .customers-list-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
-  padding-top: 18px;
-  padding-bottom: 18px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
@@ -584,11 +598,11 @@ body {
 }
 
 .footer-icon-list-link {
-  display: block;
-  padding-top: 12px;
-  padding-right: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   --color3: var(--title-dark-theme-color);
